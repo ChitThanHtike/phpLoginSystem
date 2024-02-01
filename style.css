@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    outline: none;
+}
+section{
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(84, 125, 247);
+}
+article{
+    width: 850px;
+    height: 550px;
+    box-shadow: 1px 1px 20px black;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left>img{
+    width: 80%;
+    height: 65%;
+    margin-left: 10%;
+}
+.left>span a{
+    text-decoration: underline;
+    color: #2984F1;
+    padding: 10px;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.right>main{
+    font-size: 2rem;
+    font-weight: 400;
+
+    margin : 50px 0;
+}
+.input-area{
+    display:block;
+}
+.user{
+    display: block;
+    /* border: 1px solid black; */
+    width: 320px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+}
+.pwd{
+    display: block;
+    /* border: 1px solid black; */
+    width: 320px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+}
+.user>i, .pwd>i{
+    margin: 10px;
+}
+.username, .password{
+    width: 85%;
+    height: 84%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.checkbox{
+    margin: 20px;
+}
+.login{
+    background-color: #2984F1;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px 0;
+}
+.login:hover{
+    background-color: #0970ed;
+}
+.other-login{
+    margin-top: 30px;
+}
+.other-login>span{
+    font-size: small;
+    left: 0;
+    margin-right: 30px;
+}
+.other-login>i{
+    padding: 10px;
+    border-radius: 10px;
+}
+.face-book{
+    background-color: #2984F1;
+    color: white;
+}
+.instagram{
+    background-color: red;
+    color: white;
+}
+.twitter{
+    background-color: #2984F1;
+    color: white;
+}
+.right>span{
+    margin-top: 20px;
+    display: none;
+}
+.right>span a{
+    text-decoration: underline;
+    color: #2984F1;
+}
+
+@media screen and (max-width:900px) {
+    article{
+        width: 700px;
+    }
+}
+@media screen and (max-width:568px) {
+    article{
+        width: 350px;
+    }
+    .left{
+        display: none
+    }
+    .right>span{
+        display: block;
+    }
+}
